@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Hunter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+        <section class="flex justify-center items-center gap-4">
+            <input id="inputField" class="max-w-xs p-4 rounded-lg bg-slate-100 outline-none" type="text" placeholder="Seaarch...">
+            <button onclick="handleSearch()" class="btn btn-accent">Search Product</button>
+        </section>
+        <section class="text-center mt-10">
+            <div>
+                <span id="loading_data" class="loading loading-spinner loading-lg"></span>
+            </div>
+        </section>
+        <section>
+            <div id="phones_container" class="phone_container flex flex-col lg:flex-row flex-wrap justify-center items-center gap-10">
+                
+            </div>
+        </section>
+        <section class="text-center mt-5 ">
+            <button id="showAll" class="btn btn-accent hidden">Show All</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
